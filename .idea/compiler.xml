@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SeleniumTestingMaven" />
+        <module name="SeleniumInterviewQuestions" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SeleniumTestingMaven" target="8" />
+      <module name="SeleniumInterviewQuestions" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
