@@ -20,15 +20,15 @@ public class TakesScreenShot {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        // Launch Browser
         driver.get("https://google.com");
         driver.findElement(By.name("q")).sendKeys("Welcome to Selenium");
-
+        // Take the Screen shot
         TakesScreenshot ts = (TakesScreenshot) driver;
         File out = ts.getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(out, new File(".test.png"));
 
+        // Quit the Driver
         driver.quit();
-
-
     }
 }
